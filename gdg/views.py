@@ -23,7 +23,7 @@ def send_email(request):
     print message
     print from_email
     if message and name and from_email:
-    	send_mail(from_email, message, from_email, ['deshrajdry@gmail.com'])
+    	send_mail(from_email, message, from_email, ['desh.py@gmail.com'])
     	#send_mail('desharaj', 'hello this is deshraj from allahabad', 'great.shivam19@gmail.com', ['deshrajdry@gmail.com'])
     	return HttpResponse ('thankyou for contacting us ')
     # if name=='' :
