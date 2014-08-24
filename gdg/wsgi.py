@@ -15,7 +15,7 @@ framework.
 """
 import os
 from django.core.wsgi import get_wsgi_application
-from dj_static import Cling
+# from dj_static import Cling
 
 # We defer to a DJANGO_SETTINGS_MODULE already in the environment. This breaks
 # if running multiple sites in the same mod_wsgi process. To fix this, use
@@ -31,7 +31,7 @@ application = get_wsgi_application()
 
 
 
-application = Cling(get_wsgi_application())
-# Apply WSGI middleware here.
+# # Apply WSGI middleware here.
+# application = Cling(get_wsgi_application())
 # from helloworld.wsgi import HelloWorldApplication
 # application = HelloWorldApplication(application)

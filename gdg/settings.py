@@ -1,6 +1,5 @@
 import os
 import sys
-import dj_database_url
 
 # Django settings for gdg project.
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
