@@ -5,6 +5,7 @@ from django.http import Http404, HttpResponse, \
     HttpResponseRedirect, HttpResponseNotFound
 from django.conf import settings
 import json
+import os
 from django.core.mail import send_mail
 import django
 
@@ -13,6 +14,14 @@ def home(request):
     """ landing page. """
     c = {}
     c.update(csrf(request))
+    f = open("count.txt","r+")
+    stri = f.readline()
+    f.close()
+    os.remove("count.txt")
+    f1 = open("count.txt","w+")
+    count = int(stri) + 1
+    f1.write(str(count))
+    f1.close()
     return render_to_response('index.html', context_instance=RequestContext(request))
 # 	return HttpResponse("This page is under construction")
 def send_email(request):
