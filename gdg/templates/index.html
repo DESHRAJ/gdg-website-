@@ -303,8 +303,7 @@ window.scrollTo(0,1); } </script>
 							{% csrf_token %}
 								<input name="name" type="text" class="text" value="Name..." onfocus="this.value = '';" >
 					 			<input name="from_email" type="text" class="text" value="Email..." onfocus="this.value = '';" >
-					 	 		<textarea name ="message" value="Message:" onfocus="this.value = '';"
-</textarea>
+					 	 		<textarea name ="message" value="Message:" onfocus="this.value = '';">Message...</textarea>
 								<input class="wow shake" data-wow-delay="0.3s" type="submit" value="Send Message" />
 							
 							</form>
