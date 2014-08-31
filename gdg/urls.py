@@ -7,7 +7,7 @@ from gdg import views
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'', 'gdg.views.home'),
+    url(r'^$', 'gdg.views.home'),
     url(r'contact', 'gdg.views.send_email'),
     url(r'home', 'gdg.views.home'),
     url(r'check', 'gdg.views.verify'),
