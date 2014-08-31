@@ -35,3 +35,6 @@ def send_email(request):
     else:
         return HttpResponse('Make sure all fields are entered and valid.')
     return HttpResponseRedirect('')
+
+def verify(request):
+	    return render_to_response('google731333321e881da7.html', context_instance=RequestContext(request))
