@@ -10,7 +10,7 @@ urlpatterns = patterns('',
     url(r'^$', 'gdg.views.home'),
     url(r'contact', 'gdg.views.send_email'),
     url(r'home', 'gdg.views.home'),
-    url(r'check', 'gdg.views.verify'),
+    url(r'google731333321e881da7.html', 'gdg.views.verify'),
 
     # url(r'contactus^$', 'contact.views.contactus'),
     # url(r'^gdg/', include('gdg.foo.urls')),
