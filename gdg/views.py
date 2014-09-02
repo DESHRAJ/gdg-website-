@@ -38,3 +38,6 @@ def send_email(request):
 
 def verify(request):
 	    return render_to_response('google731333321e881da7.html', context_instance=RequestContext(request))
+
+# def register(request):
+# 		return HttpResponseRedirect('https://docs.google.com/forms/d/1wU1o3fS1QwLHpn2cVEHuAgybUw91RsEq4FJwzfUUvSw/viewform?c=0&w=1&usp=mail_form_link')
